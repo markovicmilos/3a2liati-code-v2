@@ -1,0 +1,23 @@
+@media screen and (max-width : 1000px){
+	/*Make dropdown links appear inline*/
+	nav{background:none;}
+	
+
+	ol {
+		position: static;
+		display: none;
+		background:#bad306;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ol li, li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+}

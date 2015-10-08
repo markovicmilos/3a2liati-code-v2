@@ -1,0 +1,49 @@
+/*tablet <1024*/
+@media (max-width: 1023px) {
+	.top {
+		display:none;
+	}
+	.container {
+		width: 100%;
+		padding: 0px;
+	}
+
+	.container ul{
+		display:none;
+		margin right: 10px;
+	}
+
+	.nav {}
+
+	.show-menu {
+    display: block;
+    float: left;
+    padding: 10px;
+
+	.logo {
+	padding-right: 30px;
+	}
+	/*Make dropdown links appear inline*/
+	nav{background:none;}
+
+	ol {
+		position: static;
+		display: none;
+		background:#bad306;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ol li, li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+}
+/*mob <678*/
+@media (max-width: 678px) {
+
