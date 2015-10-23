@@ -1,11 +1,21 @@
 /*tablet <1024*/
 @media (max-width: 1023px) {
+	
+* {
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+}
 	.top {
 		display:none;
 	}
-	.container {
+
+	header.container {
 		width: 100%;
-		padding: 0px;
+		padding: 0px !important;
+	}
+	.container {
+	width: 100%;
+	padding: 0px 20px 0px 20px;
 	}
 
 	.container ul{
@@ -13,36 +23,134 @@
 		margin right: 10px;
 	}
 
-	.nav {}
-
+	form {
+    display: none;
+	}
+	
 	.show-menu {
     display: block;
     float: left;
     padding: 10px;
+	}
+
+	input[type=checkbox]:checked ~ #menu{
+    display: inline-block;
+    border-bottom: 3px solid #d6367f;
+/*    padding-right: 40px;
+*/    
+	}
+
+	.mob-add {
+	display: block;
+}
+
+	nav {
+    background:none;
+    margin-top: 0;
+    }   
+   
+   nav menu {
+   	display: block-level
+   }
+
+	nav.active {
+	display: inline-block;
+	min-height: 0px;
+    margin-top: 0px;
+    border-bottom: 3px solid #d6367f;
+    background: #F7F3F5;
+	}
+
+	nav ol li {
+    width: 50%;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+    padding: 0px;
+    margin: 0px;
+    background: #f1f1f1;
+	}
+
+	#menu {
+	padding: 0;}
+
+	nav ol li a {
+    color: #343333;
+    border-right: 1px solid #e0e0e0
+
+	}
 
 	.logo {
 	padding-right: 30px;
+	padding-right: 30px;
+    max-width: 85px;
+    top: 10px;
+    right: 0;
 	}
 	/*Make dropdown links appear inline*/
-	nav{background:none;}
+	/*nav{background:none;}*/
 
 	ol {
 		position: static;
 		display: none;
-		background:#bad306;
+		background: #F1F1F1;
 	}
+
 	/*Create vertical spacing*/
 	li {
 		margin-bottom: 1px;
 	}
 	/*Make all menu links full width*/
 	ol li, li a {
-		width: 100%;
+		width: none;
 	}
-	/*Display 'show menu' link*/
-	.show-menu {
-		display:block;
+
+	.mobile-add {
+	display: block	
 	}
+
+	.holder-big-right {
+	width: 100%;
+    margin: 0;
+    max-width: 62.5rem;
+    margin-bottom: 20px;
+	}
+
+	.push-left {
+		width: 33%
+	}
+
+	.big push-right {
+		width: 65%
+	}
+
+
+	.holder-big-right
+	width: 100%;
+    margin: 0;
+    max-width: 62.5rem;
+	}
+	
+	.horoscope {
+		display: none;
+	}
+
+	.add {
+	margin: 10px 20px 10px 20px;
+	width: auto;
+    height: auto;
+	}
+
+	.add img {
+	max-width: 100%;
+	}
+
+	.section-holder {
+    width: 100%;
+
+    .push-right {
+    	width: 50%
+    }
+
 }
 /*mob <678*/
 @media (max-width: 678px) {
